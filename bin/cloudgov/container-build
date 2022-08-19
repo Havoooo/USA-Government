@@ -46,7 +46,8 @@ docker build --force-rm \
     -f .docker/Dockerfile-waf .docker \
     --build-arg GITBRANCH=$GITBRANCH \
     --build-arg GITCOMMIT=$GITCOMMIT \
-    --build-arg GITTAG=$GITTAG
+    --build-arg GITTAG=$GITTAG \
+    --build-arg CONTAINERTAG=$CONTAINERTAG 
 
 if [ -n "$CONTAINERTAG2" ]
 then
